@@ -1,0 +1,232 @@
+/* Color Palette: #CCFEFF (mint green), #FFCCCB (tea rose), #ffffcc (light yellow), #e6ffcc (light green), #9633FF (purple), #006600 (green)
+#0000FF (dark blue), */
+
+.wrapper { /*John Beasley*/
+    text-align: center;
+    background-color: #CCFEFF;
+    margin-top: 4.5%;
+}
+
+.footer { /*John Beasley*/
+    background-color: #FFCCCB;
+    font-family: papyrus, garamond, serif;
+    font-size: .6vw;
+    padding: 1em;
+}
+
+.explacarousel{ /*John Beasley*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.pet-card { /*Ryani Durham*/
+    width: 100%;
+}
+
+.learn-more-btn { /*Ryani Durham*/
+    margin-bottom: 10px;
+}
+
+header h2 { /*Marlee Mccoy*/
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    color: #9633FF;
+}
+
+header h3 { /*Marlee Mccoy*/
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #006600;
+}
+
+main { /*Marlee Mccoy*/
+    padding: 2em;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: #e6ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h4 { /*Marlee Mccoy*/
+    font-size: 1.8em;
+    margin-top: 1em;
+    color: #9633FF;
+}
+
+main p { /*Marlee Mccoy*/
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+.fa-facebook, .fa-instagram, .fa-linkedin { /*Marlee Mccoy*/
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #006600;
+    text-decoration: none;
+    background-color: #FFCCCB;
+    border-radius: 50%;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-linkedin:hover { /*Marlee Mccoy*/
+    color: #CCFEFF;
+}
+
+body { /*Marlee Mccoy*/
+    font-family: Arial, sans-serif;
+    background-color: #0000FF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ 
+.container { /*Jaylon Holden*/
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+}
+
+.container2 { /*John Beasley*/
+  border: 2px solid #ccc;
+  background-color: #ffffcc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container2::after { /*John Beasley*/
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container2 img { /*John Beasley*/
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 80px;
+}
+
+.container2 span { /*John Beasley*/
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) { /*John Beasley*/
+  .container2 {
+      text-align: center;
+  }
+  .container2 img { /*John Beasley*/
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+ 
+.scroll-container2 {/*John Beasley*/
+  background-color: #333333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-container2 img { /*John Beasley*/
+  padding: 10px;
+  width: 700px;
+  height: 500px;
+}
+ 
+h1 { /*Jaylon Holden*/
+    font-size: 24px;
+    margin: 0;
+}
+ 
+textarea { /*Michael Hawkins*/
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+button { /*Michael Hawkins*/
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+button:hover { /*Michael Hawkins*/
+    background-color: #0056b3;
+}
+ 
+.reviews { /*Michael Hawkins*/
+    margin-top: 20px;
+    text-align: left;
+}
+ 
+.review { /*Michael Hawkins*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+ 
+.review p { /*Michael Hawkins*/
+    margin: 0;
+}
+
+.dog-hug { /*Marlee Mccoy*/
+    position: absolute;
+    right: 5%;
+    border-radius: 10px;
+    padding: 5px;
+}
+figure {  /*Jaylon Holden*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+figcaption { /*Jaylon Holden*/
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 5px;
+    padding: 7%;
+    font-size: 50px;
+    background-color: #CCFEFF; 
+    color: #9633FF; 
+    text-align: center; 
+}
+.formborder{ /*Jaylon Holden*/
+    border: 2px solid;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: medium;
+    border-color: #9633FF;
+    padding: 3%;
+}
+.button2{ /*Jaylon Holden*/
+    color: white;
+    background-color: #cb99ff ; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+

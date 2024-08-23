@@ -1,0 +1,135 @@
+<!--Ryani Durham, Michael Hawkins, Marlee Mccoy, John Beasley, Jaylon Holden-->
+<!--Web Development Final-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Animals</title> <!--John Beasley - Head-->
+		<link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<nav class="w3-top"> <!--John Beasley - Nav Bar-->
+			<div class="w3-bar w3-grey">
+				<a class="w3-bar-item w3-button" href="index.html">HOME</a>
+				<a class="w3-bar-item w3-button" href="about.html">ABOUT</a>
+				<a class="w3-bar-item w3-button w3-black" href="animals.html">ANIMALS</a>
+				<a class="w3-bar-item w3-button" href="explanation.html">EXPLANATION</a>
+				<a class="w3-bar-item w3-button" href="adoption.html">ADOPTION</a>
+				<a class="w3-bar-item w3-button" href="reviews.html">REVIEWS</a>
+			</div>
+		</nav>
+		<div class="wrapper">
+			<header> <!--John Beasley - Header-->
+				<h2>Pets4Vets</h2>
+				<h3>Connecting the brave with the loyal</h3>
+			</header>
+	
+		<main>
+			<div class="w3-row-padding"> <!--Ryani Durham - Div-->
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet1.jpg" class="pet-card" alt="JC the labrador retriever.">
+					<div class="w3-container w3-center">
+						<h2>JC</h2>
+						<button onclick="myFunction('pet1')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet1" class="w3-container w3-hide">
+							<h3>Labrador Retriever | Age 5 | Female</h3>
+							<p>JC is our social spark plug. She has a sweet, sassy personality and just pops with life. She has grown up at the shelter, but she will take full advantage of any opportunities to get out and meet people and mingle. She loves going on outings and does well with our other puppies.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet2.jpeg" class="pet-card" alt="Fiona the akita.">
+					<div class="w3-container w3-center">
+						<h2>Fiona</h2>
+						<button onclick="myFunction('pet2')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet2" class="w3-container w3-hide">
+							<h3>Akita | Age 4 | Female</h3>
+							<p>Fiona is a shy girl and does best with another dog to lean on and show her the ropes, but she has the biggest heart. Earning her trust is a worthwhile endeavor that is endlessly rewarding. While she's nervous meeting new people, each time she has shown us that she is getting more comfortable and just needs people who will be patient with her. Her favorite things are her blanket and hard nylon chew toys!</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- first set of dogs-->
+			<div class="w3-row-padding">
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet3.jpeg" class="pet-card" alt="Smokey the American Staffordshire Terrier.">
+					<div class="w3-container w3-center">
+						<h2>Smokey</h2>
+						<button onclick="myFunction('pet3')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet3" class="w3-container w3-hide">
+							<h3>American Staffordshire Terrier | Age 3 | Male</h3>
+							<p>Smokey is the sweetest most cuddly baby who loves a good walk and game of chase. He's very treat motivated so training is a breeze!! He's truly discovered how wonderful his life can be and embraces every second. He's going to make someone the most amazing partner.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet4.jpeg" class="pet-card" alt="Chowder the Great Pyrenees.">
+					<div class="w3-container w3-center">
+						<h2>Chowder</h2>
+						<button onclick="myFunction('pet4')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet4" class="w3-container w3-hide">
+							<h3>Great Pyrenees | Age 2 | Male</h3>
+							<p>Chowder is what we call a unicorn in the rescue world- he is dog, cat AND respectful kiddo friendly! He is a submissive and happy guy who would love a canine companion to keep showing him the ropes on how to be a dog.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- second set of dogs-->
+			<div class="w3-row-padding">
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet5.jpeg" class="pet-card" alt="Kainan the German Shepherd.">
+					<div class="w3-container w3-center">
+						<h2>Kainan</h2>
+						<button onclick="myFunction('pet5')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet5" class="w3-container w3-hide">
+							<h3>German Shepherd | Age 2 | Male</h3>
+							<p>Meet Kainan! A beautiful two year old male with the most amazing eyes you have ever seen. We are seeking an experienced adopter for kainan. Kainan was rescued from a rural shelter and sadly we do not know what this poor boy has seen in his lifetime. He needs a knowledgeable and patient adopter to help guide him out of his shell. Most importantly provide love and safety.</p>
+						</div>
+					</div>
+				</div>
+				<div class="w3-card w3-white w3-col s6">
+					<img src="./images/pet6.jpeg" class="pet-card" alt="Delilah the Golden Retriever.">
+					<div class="w3-container w3-center">
+						<h2>Delilah</h2>
+						<button onclick="myFunction('pet6')" class="w3-btn w3-round w3-black learn-more-btn">Learn More</button>
+						<div id="pet6" class="w3-container w3-hide">
+							<h3>Golden Retriever | Age 2 | Female</h3>
+							<p>Delilah is a typical Golden, loving, energetic, and needs some training. She walks well on a leash, is crate-trained, and is fully housebroken. Delilah loves to cuddle and be a loyal snuggle buddy. She also gets along well with the other dogs and a cat in her foster home.</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- third set of dogs-->
+		</main>
+		
+		
+			<div>
+				<footer class="footer"> <!--John Beasley - Footer-->
+					<p>Pets4Vets <br>
+						Contact Us At: <br>
+						111-111-1111 <br>
+						pets4vets@outlook.com <br>
+						1234 Realsville Dr. Georgia, USA 32100 <br>
+						&copy; 2024
+					</p>
+				<a href="https://www.facebook.com" class="fa fa-facebook">Facebook</a><a href="https://www.instagram.com" class="fa fa-instagram">Instagram</a><a href="https://www.linkedin.com" class="fa fa-linkedin">LinkedIn</a>
+				</footer>
+			</div> <!--footer-->
+		</div> <!--wrapper-->
+	
+		<!-- Ryani Durham - Function for accordions on pet cards -->
+		<script>
+			function myFunction(id) {
+			  var x = document.getElementById(id);
+			  if (x.className.indexOf("w3-show") == -1) {
+				x.className += " w3-show";
+			  } else { 
+				x.className = x.className.replace(" w3-show", "");
+			  }
+			}
+		</script>
+	</body>
+</html>

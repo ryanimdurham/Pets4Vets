@@ -1,0 +1,183 @@
+<!--Ryani Durham, Michael Hawkins, Marlee Mccoy, John Beasley, Jaylon Holden-->
+<!--Web Development Final-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Adoption</title> <!--John Beasley - Head-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="w3-top"> <!--John Beasley - Nav Bar-->
+        <div class="w3-bar w3-grey">
+            <a class="w3-bar-item w3-button" href="index.html">HOME</a>
+            <a class="w3-bar-item w3-button" href="about.html">ABOUT</a>
+            <a class="w3-bar-item w3-button" href="animals.html">ANIMALS</a>
+            <a class="w3-bar-item w3-button" href="explanation.html">EXPLANATION</a>
+            <a class="w3-bar-item w3-button w3-black" href="adoption.html">ADOPTION</a>
+            <a class="w3-bar-item w3-button" href="reviews.html">REVIEWS</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header> <!--John Beasley - Header-->
+            <h2>Pets4Vets</h2>
+            <h3>Connecting the brave with the loyal</h3>
+        </header>
+
+        <main>
+            <div style="display: flex; justify-content: space-between;">
+                <div class="w3-animate-zoom" style="width: 45%;">
+                    <div class="formborder">
+                        <!-- Jaylon Holden - Form -->
+                        <form id="quoteForm">
+                            <label for="fname" class="w3-text-black"><b>First Name</b></label>
+                            <input class="w3-input" type="text" id="fname">
+                            <br>
+                            <label for="lname" class="w3-text-black"><b>Last Name</b></label>
+                            <input class="w3-input" type="text" id="lname">
+                            <br>
+                            <label for="phonetype">Phone Type</label>
+                            <select class="w3-select" id="phonetype">
+                                <option>Landline</option>
+                                <option>Mobile</option>
+                                <option>Work</option>
+                            </select>
+                            <br>
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" placeholder="888-888-888" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <br>
+                            <label for="address">Address</label>
+                            <input class="w3-input w3-border" type="text" id="address">
+                            <br>
+                            <label for="email">Email</label>
+                            <input class="w3-input w3-border" type="text" id="email">
+                            <br>
+                            <label for="pet_name">Pet Name</label>
+                            <input class="w3-input w3-border" type="text" id="pet_name">
+                            <br>
+                            <label for="price_option">Price Option</label>
+                            <select id="price_option" name="price_option" required>
+                                <option value="" disabled selected>Select a price option</option>
+                                <option value="free">Free</option>
+                                <option value="low">Low $50</option>
+                                <option value="medium">Medium $100</option>
+                                <option value="high">High $150</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="cc">Credit Card Number:</label>
+                            <input type="text" id="cc" minlength="15" maxlength="16">
+                            <br>
+                            <label for="securecode">Security Code</label>
+                            <input type="text" id="securecode" maxlength="3" size="3">
+                            <br>
+                            <label for="expDate">Expiration Date</label>
+                            <input type="text" id="expDate" placeholder="mm/ dd/ yyyy">
+                            <br>
+                            <label for="date">Date</label>
+                            <input type="text" id="date">
+                            <br>
+                            <input type="checkbox" id="eula">
+                            <label for="eula">I agree to the Terms and Conditions in EULA</label>
+                            <br>
+                            <br>
+                            <button class="button2" type="submit" id="btnSubmit" style="color: black">Submit</button>
+                            <p id="error-message" style="color: red;"></p>
+                        </form>
+                    </div> <!--formborder-->
+                </div> <!--animate-->
+                <div class="w3-animate-top" style="width: 45%;">
+                    <!-- Jaylon Holden Figure -->
+                    <figure style="text-align: center;">
+                        <img style="width: 100%;" src="images/dog_hug.jpg" alt="Dog Hug">
+                        <figcaption class="border-radius">Adopt a lifelong friend Today!</figcaption>
+                    </figure>
+                </div>
+            </div> <!--starting div for form-->
+        </main>
+
+        <div>
+            <footer class="footer"> <!--John Beasley - Footer-->
+                <p>Pets4Vets <br>
+                    Contact Us At: <br>
+                    111-111-1111 <br>
+                    pets4vets@outlook.com <br>
+                    1234 Realsville Dr. Georgia, USA 32100 <br>
+                    &copy; 2024
+                </p>
+                <a href="https://www.facebook.com" class="fa fa-facebook">Facebook</a>
+                <a href="https://www.instagram.com" class="fa fa-instagram">Instagram</a>
+                <a href="https://www.linkedin.com" class="fa fa-linkedin">LinkedIn</a>
+            </footer>
+
+        </div> <!--footer-->
+    </div> <!--wrapper-->
+	<!-- Jaylon Holden- Script -->
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(event) {
+            const firstName = document.getElementById('fname').value.trim();
+            const lastName = document.getElementById('lname').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const pet_name = document.getElementById('pet_name').value.trim();
+            const price = document.getElementById('price_option').value;
+            const cc = document.getElementById('cc').value.trim();
+            const secureCode = document.getElementById('securecode').value.trim();
+            const expDate = document.getElementById('expDate').value.trim();
+            const eula = document.getElementById('eula').checked;
+            const errorMessage = document.getElementById('error-message');
+
+            errorMessage.textContent = '';
+
+            let hasError = false;
+
+            if (firstName === '') {
+                errorMessage.textContent = 'Please enter your first name.';
+                hasError = true;
+            } else if (lastName === '') {
+                errorMessage.textContent = 'Please enter your last name.';
+                hasError = true;
+            } else if (phone === '') {
+                errorMessage.textContent = 'Please enter your phone number.';
+                hasError = true;
+            } else if (address === '') {
+                errorMessage.textContent = 'Please enter your address.';
+                hasError = true;
+            } else if (email === '') {
+                errorMessage.textContent = 'Please enter your email.';
+                hasError = true;
+            } else if (pet_name === '') {
+                errorMessage.textContent = "Please enter your pet's name.";
+                hasError = true;
+            } else if (price === '') {
+                errorMessage.textContent = "Please select a price option.";
+                hasError = true;
+            } else if (cc === '' || cc.length < 15 || cc.length > 16 || isNaN(cc)) {
+                errorMessage.textContent = 'Please enter a valid credit card number.';
+                hasError = true;
+            } else if (secureCode === '' || secureCode.length !== 3 || isNaN(secureCode)) {
+                errorMessage.textContent = 'Please enter a valid security code.';
+                hasError = true;
+            } else if (expDate === '') {
+                errorMessage.textContent = 'Please enter the expiration date.';
+                hasError = true;
+            } else if (!eula) {
+                errorMessage.textContent = 'You must agree to the Terms and Conditions.';
+                hasError = true;
+            }
+
+            if (hasError) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
